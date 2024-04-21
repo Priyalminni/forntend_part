@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; /* Change font family */
+}
+
+body {
+  background: linear-gradient(to bottom, #cc99ff, #ff99cc);
+  color: #fff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-generator-container {
+  width: 80%;
+  background-image: url('your-background-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.heading {
+  font-size: 48px; /* Increase heading size */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff; /* Set font color to white */
+  font-weight: bold; /* Make heading bold */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center; /* Center content horizontally */
+}
+
+.prompt-options {
+  display: flex;
+  gap: 8px;
+  justify-content: center; /* Center buttons horizontally */
+}
+
+.prompt-option {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  background-color: #ff6b81;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.prompt-option:hover {
+  background-color: #ff4757;
+}
+
+.prompt-input,
+.generate-btn {
+  padding: 8px 24px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 4px 30px -8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.generate-btn {
+  background: #0a2342;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 400ms ease;
+}
+
+.generate-btn:hover {
+  background: #051c33;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.download-btn {
+  display: flex;
+  gap: 8px;
+  background: #0a2342;
+  color: #fff;
+  width: fit-content;
+  padding: 4px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  align-items: center;
+  margin-top: 8px;
+  justify-content: center; /* Center download button horizontally */
+}
+/* Existing CSS */
+
+.download-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust top margin as needed */
+}
+
+
+.download-btn .icon {
+  width: 20px;
+}
