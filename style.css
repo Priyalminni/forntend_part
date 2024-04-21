@@ -15,7 +15,7 @@ body {
 
 .image-generator-container {
   width: 80%;
-  background-image: url('your-background-image.jpg');
+  /* background-image: url('your-background-image.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="image-generator-container">
-    <h1 class="heading">Visualizing idea: text-driven image generation</h1>
+    <div class="image-generator-container">
+        <h1 class="heading">Visualizing idea: text-driven image generation</h1>
 
-    <div class="content">
-        <div class="prompt-options">
-            <button class="prompt-option">OpenAI</button>
-            <button class="prompt-option">Gemini</button>
-            <button class="prompt-option">Perplexity</button>
-            <button class="prompt-option">Midjourney</button>
-            <button class="prompt-option">Meta</button>
+        <div class="content">
+            <div class="prompt-options">
+                <button class="prompt-option">OpenAI</button>
+                <button class="prompt-option">Gemini</button>
+                <button class="prompt-option">Perplexity</button>
+                <button class="prompt-option">Midjourney</button>
+                <button class="prompt-option">Meta</button>
+            </div>
+            <input type="text" class="prompt-input" placeholder="Enter your prompt here...">
+
+            <button class="generate-btn">Generate Image</button>
+
+            <div class="image-container">
+                <img src="images/R.png" class="generated-image" alt="">
+            </div>
         </div>
-        <input type="text" class="prompt-input" placeholder="Enter your prompt here...">
 
-        <button class="generate-btn">Generate Image</button>
-
-        <div class="image-container">
-            <img src="C:\Users\LENOVO\OneDrive\Pictures\Camera Roll\Camera Roll\R.png" class="generated-image" alt="">
-        </div>
+         <a href="images" download="ai-image.png" class="download-btn"> 
+             <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+            </span>
+            Download 
+         </a>
     </div>
 
-    <a href="images/image-placeholder.png" download="ai-image.png" class="download-btn">
-        <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
-            </svg>
-        </span>
-        Download
-    </a>
-</div>
-
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
